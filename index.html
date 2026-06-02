@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>pace</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="logo">pace</span>
+    <button class="theme-toggle" id="theme-toggle">light</button>
+  </nav>
+
+  <div class="container">
+
+    <div id="test-screen">
+      <div id="words-display"></div>
+      <p class="hint">press <kbd>space</kbd> after each word — <kbd>backspace</kbd> to fix</p>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <p class="result-label">your results</p>
+      <div class="result-stats">
+        <div class="result-stat">
+          <span id="final-wpm">0</span>
+          <label>wpm</label>
+        </div>
+        <div class="result-stat">
+          <span id="final-accuracy">0</span>
+          <label>accuracy</label>
+        </div>
+        <div class="result-stat">
+          <span id="final-time">0</span>
+          <label>seconds</label>
+        </div>
+      </div>
+      <p class="hint">press <kbd>space</kbd> to try again</p>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
